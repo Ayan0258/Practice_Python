@@ -322,10 +322,10 @@
 
 # goodday("Ayan", "Thanks for comming")
 # goodday("Harry")
-def factorial(n):
-    if (n==1 or n==0):
-        return 1
-    return n * factorial(n-1)
+# def factorial(n):
+#     if (n==1 or n==0):
+#         return 1
+#     return n * factorial(n-1)
 
-n = int(input("Enter your number"))
-print(f"value of the factorial number",{factorial(n)})
+# n = int(input("Enter your number"))
+# print(f"value of the factorial number",{factorial(n)})
