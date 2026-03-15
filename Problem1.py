@@ -337,4 +337,4 @@
 # """
 
 
-print("testing github upload")
+print("github test")
