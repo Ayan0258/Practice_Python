@@ -373,11 +373,68 @@
 
 # star(6)
 
-def rem(l,word):
-    n=[]
-    for item in l:
-        if not(item == word):
-            n.append(item.strip(word))  
-    return n    
-l = ["Harry", "Ayan", "Anu", "Anushka", "an"]
-print(rem(l,"an"))
+# def rem(l,word):
+#     n=[]
+#     for item in l:
+#         if not(item == word):
+#             n.append(item.strip(word))  
+#     return n    
+# l = ["Harry", "Ayan", "Anu", "Anushka", "an"]
+# print(rem(l,"an"))
+
+
+
+
+# """
+# lets make a game
+
+# Rock, Paper, Scissor
+
+#     "1. Rock",
+#     "2. Paper",
+#     "3. Scissor"
+
+
+# """
+# import random
+# computer = random.choice([1,2,3])
+# youfist =int(input("Enter your first movee(1 = Rock, 2 = Paper, 3 = Scissor) : "))
+
+# print("Computer chose",computer)
+
+# if (computer==youfist):
+#     print("you can't win with same move")
+
+# else:
+#     if(computer==1 and youfist==2):
+#         print("You win")
+
+#     elif(computer==2 and youfist==1):
+#         print("You Lose")
+
+#     elif(computer==1 and youfist==3):
+#         print("You Lose")
+
+#     elif(computer==3 and youfist==1):
+#         print("You win")
+
+#     elif(computer==2 and youfist==3):
+#         print("You win")
+
+#     elif(computer==3 and youfist==2):
+#         print("You Lose")
+
+#     else:
+#         print("somthing went worng")
+
+
+
+"""
+making files
+"""
+
+pt = "Hey this is my first way to make txtfile making"
+
+f = open("myfile.txt", "w")
+f.write(pt)
+f.close()
