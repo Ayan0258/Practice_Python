@@ -34,25 +34,153 @@
 
 # //2//
 
-import random
+# import random
 
-def game():
-    print("You are playing the game..")
+# def game():
+#     print("You are playing the game..")
     
-    with open("highscore.txt") as f:
-        highscore = f.read()
-        if highscore != "":
-            highscore = int(highscore)
-        else:
-            highscore = 0
+#     with open("highscore.txt") as f:
+#         highscore = f.read()
+#         if highscore != "":
+#             highscore = int(highscore)
+#         else:
+#             highscore = 0
 
-    score = random.randint(1,67)   # first create score
-    print(f"your score: {score}")  # then print
+#     score = random.randint(1,67)   # first create score
+#     print(f"your score: {score}")  # then print
 
-    if score > highscore:
-        with open("highscore.txt","w") as f:
-            f.write(str(score))   # write NEW score
+#     if score > highscore:
+#         with open("highscore.txt","w") as f:
+#             f.write(str(score))   # write NEW score
 
-    return score
+#     return score
 
-game()
+# game()
+
+
+# ///3///
+
+
+
+
+# def namta(n):
+#     table = ""
+    
+#     for i in range(1, 11):
+#         table += f"{n} x {i} = {n*i}\n"
+
+#     with open(f"tables/namta_{n}.txt", "w") as f:
+#         f.write(table)
+
+
+# for i in range(2, 21):
+#     namta(i)
+
+
+
+# ///4///
+
+
+word = "Donkey"
+
+with open ("myfile.txt","r")as f:
+    content = f.read()
+
+    contentNew = content.replace(word, "######")
+
+
+with open ("myfile.txt","w")as f:
+    f.write(contentNew)
+
+
+
+# ///5///
+
+
+# words = ["donkey","bad","sht"]
+
+# with open ("myfile.txt","r")as f:
+#     content = f.read()
+
+# for word in words:
+#     content = content.replace(word, "#" * len(word))
+
+
+# with open ("myfile.txt","w")as f:
+#     f.write(content)
+
+
+
+
+# ///6///
+
+
+# with open("myfile.txt") as f:
+#     content = f.read()
+
+# if("python" in content):
+#     print("Yes python is present in this file")
+# else:
+#     print("python not present in this file")
+
+
+# ///7///
+
+
+
+# with open("myfile.txt") as f:
+#     lines = f.readlines()
+
+# lineNo = 1
+# for line in lines:
+#     if("python" in line):
+#         print(f"Yes python is present in this file, line No :", {lineNo})
+#         break
+#     lineNo += 1
+# else:
+#     print("python not present in this file")
+
+
+# ///8///
+
+
+# with open("myfile.txt") as f:
+#     content = f.read()
+
+# with open("copy.txt", "w") as f:
+#     f.write(content)
+
+
+# ///9///
+
+
+# with open("myfile.txt") as f:
+#     content1 = f.read()
+
+# with open("copy.txt") as f:
+#     content2 = f.read()
+
+# if (content1 == content2):
+#     print ("The content of this file are same")
+
+# else:
+#     print("This two files conent are not same")
+
+
+# ///10///
+
+
+# with open("copy.txt", "w")as f:
+#    f.write("")
+
+
+# ///11///
+
+# we just need to make new file and delete the old file
+
+
+with open("old.txt") as f:
+    content = f.read()
+
+with open("new_file.txt", "w") as f:
+    f.write(content)
