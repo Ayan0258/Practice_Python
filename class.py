@@ -1,35 +1,35 @@
-# class Employe:
-#     role = "Ai Engineer"
-#     salary = 200000
+class Employe:
+    role = "Ai Engineer"
+    salary = 200000
 
-# Ayan = Employe()
-# Ayan.name = "AyanDas"
-# print(Ayan.name,Ayan.role,Ayan.salary)
+Ayan = Employe()
+Ayan.name = "AyanDas"
+print(Ayan.name,Ayan.role,Ayan.salary)
 
-# Ram = Employe()
-# Ram.name = "Ram lal"
-# print(Ram.name,Ram.role,Ram.salary)
+Ram = Employe()
+Ram.name = "Ram lal"
+print(Ram.name,Ram.role,Ram.salary)
 
-# /////staticmethod//
+/////staticmethod//
 
-# class Employe:
-#     role = "Ai Engineer"
-#     salary = 200000
-
-
-#     def getinfo(self):
-#         print(f"The role is: {self.role},The salary ammount is: {self.salary}")
-
-#     @staticmethod
-#     def greet():
-#         print("Good morning")
+class Employe:
+    role = "Ai Engineer"
+    salary = 200000
 
 
-# Ayan = Employe()
-# Ayan.greet()
-# Ayan.getinfo() 
+    def getinfo(self):
+        print(f"The role is: {self.role},The salary ammount is: {self.salary}")
 
-# ///constractor.//
+    @staticmethod
+    def greet():
+        print("Good morning")
+
+
+Ayan = Employe()
+Ayan.greet()
+Ayan.getinfo() 
+
+///constractor.//
 
 
 class Employe:
