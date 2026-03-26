@@ -13,52 +13,134 @@
 
 """
 
-# //1//
+//1//
 
-# class programmers:
-#     company = "Microsoft"
-#     def __init__(self, name, salary, pin,company):
-#         self.name = name
-#         self.salary = salary
-#         self.pin =pin
-#         self.company = company
+class programmers:
+    company = "Microsoft"
+    def __init__(self, name, salary, pin,company):
+        self.name = name
+        self.salary = salary
+        self.pin =pin
+        self.company = company
 
-# p =programmers("Ayan",120000,70009,"nvdia")
-# print(p.name,p.salary,p.pin,p.company)
-# m =programmers("mita",120000,70009,"microsoft")
-# print(m.name,m.salary,m.pin,m.company)
-
-
-# ///2///
+p =programmers("Ayan",120000,70009,"nvdia")
+print(p.name,p.salary,p.pin,p.company)
+m =programmers("mita",120000,70009,"microsoft")
+print(m.name,m.salary,m.pin,m.company)
 
 
-# class Calculator:
-#     def __init__(self, n):
-#         self.n = n
-
-#     def square(self):
-#         print(f"The square value is:{self.n**2}")
-
-#     def cube(self):
-#         print(f"The cube value is: {self.n**3}")
-
-#     def squareroot(self):
-#         print(f"the squareroot value is: {self.n**1/2}")
+///2///
 
 
-# a = Calculator(5)
-# a.square()
-# a.cube()
-# a.squareroot()
+class Calculator:
+    def __init__(self, n):
+        self.n = n
 
-# ///3///
+    def square(self):
+        print(f"The square value is:{self.n**2}")
+
+    def cube(self):
+        print(f"The cube value is: {self.n**3}")
+
+    def squareroot(self):
+        print(f"the squareroot value is: {self.n**1/2}")
 
 
-# class demo:
-#     a = 4
+a = Calculator(5)
+a.square()
+a.cube()
+a.squareroot()
 
-# o = demo()
-# print(o.a) #print class atribute . because instance atribute not presnt
-# o.a = 0 #instance atribute is set
-# print(o.a)#print instant atribute because its present here
-# print(demo.a)
+///3///
+
+
+class demo:
+    a = 4
+
+o = demo()
+print(o.a) #print class atribute . because instance atribute not presnt
+o.a = 0 #instance atribute is set
+print(o.a)#print instant atribute because its present here
+print(demo.a)
+
+///4///
+
+class Calculator:
+    def __init__(self, n):
+        self.n = n
+
+    def square(self):
+        print(f"The square value is:{self.n**2}")
+
+    def cube(self):
+        print(f"The cube value is: {self.n**3}")
+
+    def squareroot(self):
+        print(f"the squareroot value is: {self.n**1/2}")
+
+
+    @staticmethod
+    def hello():
+        print("hello")
+
+
+
+a = Calculator(5)
+a.hello()
+a.square()
+a.cube()
+a.squareroot()
+
+///5///
+
+from random import randint
+
+class Train:
+    def __init__(self, traininfo):
+        self.traininfo = traininfo
+
+    def book(self,fro,to):
+        print(f"Ticket has been book train no: {self.traininfo},from {fro} to {to}" )
+
+    def getstatus(self):
+        print(f"Your train ticket status is: your train number{self.traininfo} is runing on time")
+
+    def getfrm(self,fro,to):
+        print(f"your train ticket number:{self.traininfo} from{fro} to {to} is {randint(100, 89999)}")
+
+
+T = Train(1233)
+T.book("Chakdaha","Kalyani")
+T.getstatus()
+
+
+
+///5//
+
+
+
+from random import randint
+
+class Train:
+    def __init__(slf, traininfo): #we change self to slf but its dont effect
+        slf.traininfo = traininfo
+
+    def book(Ayan,fro,to):
+        print(f"Ticket has been book train no: {Ayan.traininfo},from {fro} to {to}" )#nothing will happen even we change . its just a veriable but we pefer self for communication
+
+
+    def getstatus(self):
+        print(f"Your train ticket status is: your train number{self.traininfo} is runing on time")
+
+    def getfrm(self,fro,to):
+        print(f"your train ticket number:{self.traininfo} from{fro} to {to} is {randint(100, 89999)}")
+
+
+T = Train(1233)
+T.book("Chakdaha","Kalyani")
+T.getstatus()
+T.getfrm("Chakdaha","Kalyani")
+        
+
+
+
