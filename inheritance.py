@@ -33,14 +33,59 @@ how to use super
 how to use class method
 """
 
-class Employe:
-    a = 1
+# class Employe:
+#     a = 1
 
-    @classmethod
-    def show(cls):
-        print(f"The class atribute of a is {cls.a}")
+#     @classmethod
+#     def show(cls):
+#         print(f"The class atribute of a is {cls.a}")
 
-e = Employe()
+# e = Employe()
 
-e.a = 45
-e.show()
+# e.a = 45
+# e.show()
+
+
+"""
+property decorater
+"""
+# class Employe:
+#     a = 1
+
+#     @classmethod
+#     def show(cls):
+#         print(f"The class atribute of a is {cls.a}")
+
+#     @property
+#     def name(self):
+#         return f"{self.fname} {self.lname}"
+
+#     @name.setter
+#     def name(self,value):
+#         self.fname = value.split(" ")[0]#this is work is if you space "" this will spilt a list like "Ayan DAs" into a [ayan,das]
+#         self.lname = value.split(" ")[1]
+
+
+
+# e = Employe()
+# e.a = 45
+# e.name = "Ayan Das"
+# print(e.name)
+# e.show()
+
+"""
+
+oparator overloading
+"""
+
+class Number:
+    def __init__(self, n):
+        self.n = n
+
+    def __add__(self, num):
+        return self.n + num.n
+    
+n = Number(1)
+m = Number(2)
+
+print(n + m)
